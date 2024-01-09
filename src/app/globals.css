@@ -25,3 +25,162 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.sky {
+  position: relative;
+  width: 100%;
+  background: #4558B2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ECB8AA,
+    #1E1E51
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ECB8AA,
+    #1E1E51
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -olinear-gradient(to top, #283e51, #0a2342);
+  height: auto;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(http://www.script-tutorials.com/demos/360/images/stars.png)
+    repeat top center;
+  z-index: 0;
+}
+
+.inside-text {
+  /* font-family: "Rammetto One"; */
+  text-align: center;
+  font-size: 1.75rem;
+  color: #fff;
+  width: 55%;
+  margin: 5rem auto;
+  line-height: 3rem;
+  letter-spacing: 5px;
+}
+
+.primaryButton {
+  --color: #fff;
+  display: inline-block;
+  background: #4C3CFF;
+  padding: 0px 12px;
+  height: 50px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 19px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #fff;
+ }
+ 
+ .primaryButton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: black;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ .primaryButton:hover {
+  color: #fff;
+ }
+.secondaryButton {
+  --color: black;
+  display: inline-block;
+  background: transparent;
+  padding: 0px 12px;
+  height: 50px;
+  margin: 20px;
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 19px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: white;
+ }
+ 
+ .secondaryButton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ .secondaryButton:hover {
+  color: black;
+ }
+ 
+ .footerButton {
+  --color: black;
+  display: inline-block;
+  background: #fff;
+  padding: 0px 12px;
+  height: 50px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 19px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: black;
+ }
+ 
+ .footerButton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: black;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ .footerButton:hover {
+  color: #fff;
+ }
+ button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ button:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ button:active:before {
+  background: black;
+  transition: background 0s;
+ }
+
+ .footertext{
+  color: #B8C1CC;
+  cursor: pointer;
+ }
+ .footertext:hover{
+  color: #4c3cffd9;
+ }

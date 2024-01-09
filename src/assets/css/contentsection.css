@@ -1,0 +1,32 @@
+@keyframes slideLeft {
+  from {
+    transform: translateX(-40px); /* Adjust the initial position */
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(40px); /* Adjust the initial position */
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideLeft {
+  animation: slideLeft 1s ease-in-out; /* Adjust the duration */
+}
+
+.slideRight {
+  animation: slideRight 1s ease-in-out; /* Adjust the duration */
+}
+
+@media (max-width: 768px) {
+  /* Disable animations for screens smaller than or equal to 768px */
+  .slideLeft, .slideRight {
+    animation: none;
+  }
+}
